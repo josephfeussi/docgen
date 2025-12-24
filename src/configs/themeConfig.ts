@@ -138,7 +138,7 @@ export type Config = {
 }
 
 const themeConfig: Config = {
-  templateName: 'Materialize',
+  templateName: 'DocGen',
   homePageUrl: '/home',
   settingsCookieName: 'materialize-mui-next-demo-6',
   mode: 'dark', // 'system', 'light', 'dark'
