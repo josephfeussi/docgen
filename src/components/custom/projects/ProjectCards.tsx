@@ -1,6 +1,8 @@
 'use client'
 
 // MUI Imports
+import { useEffect, useState } from 'react'
+
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Grid from '@mui/material/Grid'
@@ -17,7 +19,6 @@ import CustomAvatar from '@core/components/mui/Avatar'
 
 // Projects data helpers
 import { loadProjects } from '@/data/projects/projectsData'
-import { useEffect, useState } from 'react'
 
 type ProjectType = {
   id: string
@@ -46,7 +47,7 @@ const ProjectCards = () => {
     <>
       <Grid container spacing={6}>
         {items.map((p: ProjectType, idx: number) => (
-          <Grid xs={{ xs: 12, sm: 6, lg: 4 }} key={p.id} >
+          <Grid item xs={12} sm={6} lg={4} key={p.id}>
             <Card className='h-full'>
               <CardContent className='flex flex-col gap-4'>
                 {p.image && (
