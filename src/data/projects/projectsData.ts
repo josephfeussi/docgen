@@ -87,13 +87,13 @@ export function saveProject(project: Partial<Project>): Project {
 
   const id = project.id ?? `p_${Date.now()}`
 
-  const existing = arr.find(p => p.id === id) || {}
+  const existing: Project | undefined = arr.find(p => p.id === id)
 
   const full: Project = {
-    ...existing,
+    ...(existing ?? {}),
     ...project,
     id,
-    href: project.href ?? existing.href ?? `/projects/${id}`
+    href: project.href ?? existing?.href ?? `/projects/${id}`
   } as Project
 
   const idx = arr.findIndex(p => p.id === id)
