@@ -7,7 +7,7 @@ const Projects = () => {
     <Grid container spacing={6}>
       <Grid size={{ xs: 12 }}>
         <Typography variant='h3' className='mbe-1'>
-          Roles List
+          Projects List
         </Typography>
 
       </Grid>
