@@ -12,8 +12,6 @@ import type { TypographyProps } from '@mui/material/Typography'
 import type { CardProps } from '@mui/material/Card'
 
 // Component Imports
-import OpenDialogOnElementClick from '@components/dialogs/OpenDialogOnElementClick'
-
 import Link from '@components/Link'
 import CustomAvatar from '@core/components/mui/Avatar'
 
