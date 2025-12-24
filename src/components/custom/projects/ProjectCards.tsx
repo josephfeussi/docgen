@@ -47,7 +47,7 @@ const ProjectCards = () => {
     <>
       <Grid container spacing={6}>
         {items.map((p: ProjectType, idx: number) => (
-          <Grid item xs={12} sm={6} lg={4} key={p.id}>
+          <Grid key={p.id} size={{ xs: 12, sm: 6, lg: 4 }}>
             <Card className='h-full'>
               <CardContent className='flex flex-col gap-4'>
                 {p.image && (
