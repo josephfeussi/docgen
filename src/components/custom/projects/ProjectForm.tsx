@@ -64,13 +64,13 @@ const ProjectForm = ({ initialData }: { initialData?: FormData }) => {
       <div style={{ marginTop: 16 }}>
         {activeStep === 0 && (
           <Grid container spacing={2}>
-            <Grid item size={{ xs: 12 }}>
+            <Grid size={{ xs: 12 }}>
               <TextField fullWidth label='Title' value={data.title} onChange={onChange('title')} />
             </Grid>
-            <Grid item size={{ xs: 12 }}>
+            <Grid  size={{ xs: 12 }}>
               <TextField fullWidth label='Description' value={data.description} onChange={onChange('description')} multiline rows={3} />
             </Grid>
-            <Grid item size={{ xs: 12 }}>
+            <Grid  size={{ xs: 12 }}>
               <TextField select fullWidth label='Financing Organisation' value={data.organisation} onChange={onChange('organisation')}>
                 <MenuItem value=''>None</MenuItem>
                 <MenuItem value='BEAC'>BEAC</MenuItem>
@@ -83,10 +83,10 @@ const ProjectForm = ({ initialData }: { initialData?: FormData }) => {
 
         {activeStep === 1 && (
           <Grid container spacing={2}>
-            <Grid item size={{ xs: 12 }}>
+            <Grid size={{ xs: 12 }}>
               <TextField fullWidth label='Requested Amount' value={data.amount} onChange={onChange('amount')} />
             </Grid>
-            <Grid item size={{ xs: 12 }}>
+            <Grid size={{ xs: 12 }}>
               <TextField fullWidth label='Contact' value={data.contact} onChange={onChange('contact')} />
             </Grid>
           </Grid>
